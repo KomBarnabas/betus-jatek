@@ -14,7 +14,6 @@ const rosszDbP = document.getElementById("rosszDbP");
 const ujraGomb = document.getElementById("ujraGomb")
 const  skipButton = document.getElementById("skipButton")
 
-
 let szavak = ["idegen", "asztal", "doboz", "cukor", "kerék", "tanár", "iskola", "ablak", "cipő", "füzet", "telefon", "kapu", "labda", "szék", "ceruza", "papír", "ház", "bolt", "fülke", "keres", "vásár", "gomba", "állat", "ember", "nadrág", "sapka", "kabát",
     "gyerek", "kacsa", "könyv", "írás", "alma", "tehén", "kutya", "madár", "létra", "dob", "csiga", "pohár", "csésze", "kulcs", "tükör", "padló", "szoba", "villám", "zebra", "repül", "tavasz", "ősz", "nyár"];
 /*let szavak = ["asd"];*/
@@ -52,9 +51,10 @@ function kevero(lst){
 }
 
 function correction(){
-    if (eredetiTipp.value === "debug"){
+    console.log(eredetiTipp.value.toLowerCase())
+    if (eredetiTipp.value.toLowerCase() === "debug"){
         skipButton.style.display = "block";
-    }else if (eredetiTipp.value === randomSzo){
+    }else if (eredetiTipp.value.toLowerCase() === randomSzo){
        joTipp()
     }else{
         eredmenyKi.innerHTML = "Nem találtad el. Próbáld újra";
