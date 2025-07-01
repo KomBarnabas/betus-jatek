@@ -7,8 +7,8 @@
     <style>
         body{font-family: "Comic Sans MS";}
         #menuDiv{padding-top: 15%;font-size: 50px;}
-        #jatekDiv{padding-top: 10%; font-size: 40px; display: none;}
-        #finishDiv{padding-top: 15%;display: none;}
+        #jatekDiv{padding-top: 10%; font-size: 40px; display: none; text-align: center;}
+        #finishDiv{padding-top: 15%;display: none; text-align: center;}
         #startButton{border-style: groove; background-color: rgb(240, 240, 240);}
         #themeGomb{border-style: groove; background-color: rgb(240, 240, 240); position: absolute; bottom: 50px; position: absolute; left: 50px; font-size: 15px; height: 80px; width: 80px;}
         #tippGomb{border-style: groove; background-color: rgb(240, 240, 240);}
@@ -17,6 +17,7 @@
         #gratulaP{font-size: 70px;}
         #rosszDbP{font-size: 35px;}
         #ujraGomb{height: 70px; width: 100px; font-size: 25px;}
+        #gombP{text-align: center;}
     </style>
 <body>
     <div id="menuDiv">
@@ -25,21 +26,17 @@
 
     <div id="jatekDiv">
         <p id="score">Score: 0</p>
-        <center>
-            <p>Találd ki az eredeti szót!</p>
-            <p id="kevertKi"></p>
-            <p><input type="text" placeholder="Írd be az eredeti szót" id="eredetiTipp" style="font-size: 25px;"> <input type="button" value="Tippelj!" id="tippGomb" style="font-size: 25px;"></p>
-            <p id="eredmenyKi"></p>
-            <p><input type="button" value="Következő" id="koviGomb" style="display: none; font-size: 25px;"></p>
-        </center>
+        <p>Találd ki az eredeti szót!</p>
+        <p id="kevertKi"></p>
+        <p><input type="text" placeholder="Írd be az eredeti szót" id="eredetiTipp" style="font-size: 25px;"> <input type="button" value="Tippelj!" id="tippGomb" style="font-size: 25px;"></p>
+        <p id="eredmenyKi"></p>
+        <center><p><input type="button" value="Következő" id="koviGomb" style="display: none; font-size: 25px;"></p></center>
     </div>
 
     <div id="finishDiv">
-        <center>
-            <p id ="gratulaP">Gratulálunk kitaláltál minden szót!</p>
-            <p id = "rosszDbP"></p>
-            <p><input type="button" value="Újra" id="ujraGomb"></p>
-        </center>
+        <p id ="gratulaP">Gratulálunk kitaláltál minden szót!</p>
+        <p id = "rosszDbP"></p>
+        <p><input type="button" value="Újra" id="ujraGomb"></p>
     </div>
 
     <div id="ui">
@@ -48,5 +45,6 @@
     </div>
 
     <script src="code.js"></script>
+
 </body>
 </html>
