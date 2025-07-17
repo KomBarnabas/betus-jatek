@@ -155,6 +155,7 @@ themeGomb.addEventListener("click", function(){
     mediumGomb.style.backgroundColor = "rgb(240, 240, 240)"; mediumGomb.style.color = "black";
     hardGomb.style.backgroundColor = "rgb(240, 240, 240)"; hardGomb.style.color = "black";
     selectButton.style.backgroundColor = "rgb(240, 240, 240)"; selectButton.style.color = "black";
+    ujraGomb.style.backgroundColor = "rgb(240, 240, 240)"; ujraGomb.style.color = "black";
 
     buttonColors = ["rgb(250, 250, 250)", "rgb(240, 240, 240)"]
     darkTheme = false;
@@ -169,6 +170,7 @@ themeGomb.addEventListener("click", function(){
         mediumGomb.style.backgroundColor = "rgb(60, 60, 60)"; mediumGomb.style.color = "white";
         hardGomb.style.backgroundColor = "rgb(60, 60, 60)"; hardGomb.style.color = "white";
         selectButton.style.backgroundColor = "rgb(60, 60, 60)"; selectButton.style.color = "white";
+        ujraGomb.style.backgroundColor = "rgb(60, 60, 60)"; ujraGomb.style.color = "white";
 
         buttonColors = ["rgb(70, 70, 70)", "rgb(60, 60, 60)"];
         
@@ -292,6 +294,13 @@ if (true){
         event.target.style.backgroundColor = buttonColors[0];
     })
     selectButton.addEventListener("mouseleave", function( event ){
+        event.target.style.backgroundColor = buttonColors[1];
+    })
+
+    ujraGomb.addEventListener("mouseenter", function( event ){
+        event.target.style.backgroundColor = buttonColors[0];
+    })
+    ujraGomb.addEventListener("mouseleave", function( event ){
         event.target.style.backgroundColor = buttonColors[1];
     })
 }
