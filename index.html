@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kitaláló</title>
     <style>
-        body{font-family: "Comic Sans MS";}
-        #menuDiv{padding-top: 7%;font-size: 50px; text-align: center;}
-        #jatekDiv{padding-top: 20%; font-size: 40px; display: none; text-align: center;}
-        #finishDiv{padding-top: 15%;display: none; text-align: center;}
-        #diffDiv{text-align: center; display: none; padding: 70px;}
+        body{font-family: "Comic Sans MS"; height: 100%; width: 100%;}
+        #menuDiv{padding-top: 10vh;font-size: 50px; text-align: center; height: 100%; width: 100%;}
+        #jatekDiv{padding-top: 20%; font-size: 40px; display: none; text-align: center; height: 100%; width: 100%;}
+        #finishDiv{padding-top: 15%;display: none; text-align: center; height: 100%; width: 100%;}
+        #diffDiv{text-align: center; display: none; padding: 70px;  height: 100%; width: 100%;}
         #startButton{border-style: groove; background-color: rgb(240, 240, 240);}
-        #themeGomb{border-style: groove; background-color: rgb(240, 240, 240); position: absolute; bottom: 50px; position: absolute; left: 50px; font-size: 15px; height: 80px; width: 80px;}
+        #themeGomb{border-style: groove; background-color: rgb(240, 240, 240); position: absolute; bottom: 50px; position: absolute; left: 50px; font-size: 2vh; height: 9vh; width: 9vh; margin-right: 0px; margin-left: 0px;}
         #tippGomb{border-style: groove; background-color: rgb(240, 240, 240);}
         #koviGomb{border-style: groove; background-color: rgb(240, 240, 240);}
         #score{position: absolute; top: 50px; right: 70px; padding: 0; margin: 0;}
@@ -19,41 +19,41 @@
         #rosszDbP{font-size: 35px;}
         #ujraGomb{height: 70px; width: 100px; font-size: 25px;}
         #gombP{text-align: center;}
-        #easyGomb{border-width: 2px;}
-        #mediumGomb{margin: 40px 200px; border-width: 2px;}
-        #hardGomb{border-width: 2px;}
+        #easyGomb{border-width: 2px; height: 15vh; width: 15vw;}
+        #mediumGomb{margin: 40px 200px; border-width: 2px; height: 15vh; width: 15vw;}
+        #hardGomb{border-width: 2px; height: 15vh; width: 15vw;}
     </style>
 <body>
     <div id="menuDiv", style="font-size: 0px;">
-        <p style="margin-bottom: 300px;">
-            <span style="color: orange; font-size: 100px;">S</span>
-            <span style="color: green; font-size: 100px;">z</span>
-            <span style="color: blue; font-size: 100px;">ó </span>
-            <span style="font-size: 100px;">&nbsp</span>
-            <span style="color: red; font-size: 100px;">K</span>
-            <span style="color: green; font-size: 100px;">i</span>
-            <span style="color: aqua; font-size: 100px;">t</span>
-            <span style="color: red; font-size: 100px;">a</span>
-            <span style="color: blueviolet; font-size: 100px;">l</span>
-            <span style="color: blue; font-size: 100px;">á</span>
-            <span style="color: orange; font-size: 100px;">l</span>
-            <span style="color: aqua; font-size: 100px;">ó</span>
-            <span style="font-size: 100px;">&nbsp</span>
-            <span style="color: red; font-size: 100px;">B</span>
-            <span style="color: orange; font-size: 100px;">e</span>
-            <span style="color: blueviolet; font-size: 100px;">t</span>
-            <span style="color: green; font-size: 100px;">ű</span>
-            <span style="color: blue; font-size: 100px;">k</span>
-            <span style="color: aqua; font-size: 100px;">b</span>
-            <span style="color: green; font-size: 100px;">ő</span>
-            <span style="color: blue; font-size: 100px;">l</span>
-            <span style="font-size: 100px;">&nbsp</span>
-            <span style="color: aqua; font-size: 100px;">A</span>
-            <span style="color: red; font-size: 100px;">k</span>
-            <span style="color: orange; font-size: 100px;">á</span>
-            <span style="color: green; font-size: 100px;">r</span>
-            <span style="color: orange; font-size: 100px;">m</span>
-            <span style="color: aqua; font-size: 100px;">i</span>
+        <p style="margin-bottom: 300px; margin-bottom: 25vh;">
+            <span style="color: orange; font-size: 10vh; ">S</span>
+            <span style="color: green; font-size: 10vh;">z</span>
+            <span style="color: blue; font-size: 10vh;">ó </span>
+            <span style="font-size: 10vh;">&nbsp</span>
+            <span style="color: red; font-size: 10vh;">K</span>
+            <span style="color: green; font-size: 10vh;">i</span>
+            <span style="color: aqua; font-size: 10vh;">t</span>
+            <span style="color: red; font-size: 10vh;">a</span>
+            <span style="color: blueviolet; font-size: 10vh;">l</span>
+            <span style="color: blue; font-size: 10vh;">á</span>
+            <span style="color: orange; font-size: 10vh;">l</span>
+            <span style="color: aqua; font-size: 10vh;">ó</span>
+            <span style="font-size: 10vh;">&nbsp</span>
+            <span style="color: red; font-size: 10vh;">B</span>
+            <span style="color: orange; font-size: 10vh;">e</span>
+            <span style="color: blueviolet; font-size: 10vh;">t</span>
+            <span style="color: green; font-size: 10vh;">ű</span>
+            <span style="color: blue; font-size: 10vh;">k</span>
+            <span style="color: aqua; font-size: 10vh;">b</span>
+            <span style="color: green; font-size: 10vh;">ő</span>
+            <span style="color: blue; font-size: 10vh;">l</span>
+            <span style="font-size: 10vh;">&nbsp</span>
+            <span style="color: aqua; font-size: 10vh;">A</span>
+            <span style="color: red; font-size: 10vh;">k</span>
+            <span style="color: orange; font-size: 10vh;">á</span>
+            <span style="color: green; font-size: 10vh;">r</span>
+            <span style="color: orange; font-size: 10vh;">m</span>
+            <span style="color: aqua; font-size: 10vh;">i</span>
         </p>
         <p><input type="button" value="Start" id="startButton" style="width: 300px; height: 100px; font-size: 40px;"></p>
     </div>
@@ -61,7 +61,7 @@
     <div id = 'diffDiv'>
         <p style="font-size: 60px;">Select difficulty</p>
         <p id="selectedDiff" style="font-size: 50px; height: 70px;"> </p>
-        <p><button id ='easyGomb'><img src="easy.PNG" alt="Easy"></button> <button id ='mediumGomb'><img src="medium.PNG" alt="Medium"></button> <button id ='hardGomb'><img src="hard.PNG" alt="Hard"></button></p>
+        <p><button id ='easyGomb'><img src="easy.PNG" alt="Easy" style="height: 100%; width: 100%;"></button> <button id ='mediumGomb'><img src="medium.PNG" alt="Medium" style="height: 100%; width: 100%;"></button> <button id ='hardGomb'><img src="hard.PNG" alt="Hard" style="height: 100%; width: 100%;"></button></p>
         <p><input type="button" value="Select" id="selectButton" style="font-size: 40px; height: 100px; width: 300px; margin-top: 60px; display: none; border-width: 2px;"></p>
     </div> 
 
