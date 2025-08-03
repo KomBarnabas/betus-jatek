@@ -1,3 +1,4 @@
+
 const startButton = document.getElementById("startButton");
 const menuDiv = document.getElementById("menuDiv");
 const diffDiv = document.getElementById('diffDiv')
@@ -35,6 +36,8 @@ osszSzo={
     'medium': mediumSzavak,
     'hard': hardSzavak
 };
+
+let mavMost = false;
 
 let szavak = ["asd"];
 
@@ -77,28 +80,34 @@ function kevero(lst){
 }
 
 function correction(){
-    console.log(eredetiTipp.value.toLowerCase())
-    if (eredetiTipp.value.toLowerCase() === "debug"){
-        skipButton.style.display = "inline";
-    }else if (eredetiTipp.value.toLowerCase() === randomSzo){
-       if(!pressedNext){
-        joTipp()
-       }
-    }else if(eredetiTipp.value.toLowerCase() === 'máv'){
-        mav.play();
-        for (let i = 0; i <= 20; i++){
-            setTimeout( () => {
-                if (i < 20){
-                    eredmenyKi.innerHTML = `<p>Értesítjük kedves utasainkat, hogy a vonat 20 órát késik</p><p>Még ${20-i} óra van hátra</p>`;
-                }else{
-                    eredmenyKi.innerHTML = "Nem találtad el. Próbáld újra";
-                    rossz++;
-                }
-                }, i*2000);
+    if (!mavMost){
+        console.log(eredetiTipp.value.toLowerCase())
+        if (eredetiTipp.value.toLowerCase() === "debug"){
+            skipButton.style.display = "inline";
+        }else if (eredetiTipp.value.toLowerCase() === randomSzo){
+        if(!pressedNext){
+            joTipp()
         }
-    }else{
-        eredmenyKi.innerHTML = "Nem találtad el. Próbáld újra";
-        rossz++;
+        }else if(eredetiTipp.value.toLowerCase() === 'máv'){
+            mav.play();
+            mavMost = true;
+            for (let i = 0; i <= 20; i++){
+                setTimeout( () => {
+                    if (i < 20){
+                        eredmenyKi.innerHTML = `<p>Értesítjük kedves utasainkat, hogy a vonat 20 órát késik</p><p>Még ${20-i} óra van hátra</p>`;
+                    }else{
+                        eredmenyKi.innerHTML = "Nem találtad el. Próbáld újra";
+                        rossz++;
+                        mavMost = false;
+                        console.log("mav false")
+                    }
+                    }, i*1000);
+            }
+            
+        }else{
+            eredmenyKi.innerHTML = "Nem találtad el. Próbáld újra";
+            rossz++;
+        }
     }
 }
 
