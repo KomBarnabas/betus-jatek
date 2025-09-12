@@ -3,89 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kitaláló</title>
-    <style>
-        body{font-family: "Comic Sans MS"; height: 100%; width: 100%;}
-        #menuDiv{padding-top: 10vh;font-size: 50px; text-align: center; height: 100%; width: 100%;}
-        #jatekDiv{padding-top: 20%; font-size: 40px; display: none; text-align: center; height: 100%; width: 100%;}
-        #finishDiv{padding-top: 15%;display: none; text-align: center; height: 100%; width: 100%;}
-        #diffDiv{text-align: center; display: none; padding: 70px;  height: 100%; width: 100%;}
-        #startButton{border-style: groove; background-color: rgb(240, 240, 240);}
-        #themeGomb{border-style: groove; background-color: rgb(240, 240, 240); position: absolute; bottom: 50px; position: absolute; left: 50px; font-size: 2vh; height: 9vh; width: 9vh; margin-right: 0px; margin-left: 0px;}
-        #tippGomb{border-style: groove; background-color: rgb(240, 240, 240);}
-        #koviGomb{border-style: groove; background-color: rgb(240, 240, 240);}
-        #score{position: absolute; top: 50px; right: 70px; padding: 0; margin: 0;}
-        #gratulaP{font-size: 70px;}
-        #rosszDbP{font-size: 35px;}
-        #ujraGomb{height: 70px; width: 100px; font-size: 25px;}
-        #gombP{text-align: center;}
-        #easyGomb{border-width: 2px; height: 15vh; width: 15vw;}
-        #mediumGomb{margin: 40px 200px; border-width: 2px; height: 15vh; width: 15vw;}
-        #hardGomb{border-width: 2px; height: 15vh; width: 15vw;}
-    </style>
+    <title>Loading...</title>
+</head>
 <body>
-    <div id="menuDiv", style="font-size: 0px;">
-        <p style="margin-bottom: 300px; margin-bottom: 25vh;">
-            <span style="color: orange; font-size: 10vh; ">S</span>
-            <span style="color: green; font-size: 10vh;">z</span>
-            <span style="color: blue; font-size: 10vh;">ó </span>
-            <span style="font-size: 10vh;">&nbsp</span>
-            <span style="color: red; font-size: 10vh;">K</span>
-            <span style="color: green; font-size: 10vh;">i</span>
-            <span style="color: aqua; font-size: 10vh;">t</span>
-            <span style="color: red; font-size: 10vh;">a</span>
-            <span style="color: blueviolet; font-size: 10vh;">l</span>
-            <span style="color: blue; font-size: 10vh;">á</span>
-            <span style="color: orange; font-size: 10vh;">l</span>
-            <span style="color: aqua; font-size: 10vh;">ó</span>
-            <span style="font-size: 10vh;">&nbsp</span>
-            <span style="color: red; font-size: 10vh;">B</span>
-            <span style="color: orange; font-size: 10vh;">e</span>
-            <span style="color: blueviolet; font-size: 10vh;">t</span>
-            <span style="color: green; font-size: 10vh;">ű</span>
-            <span style="color: blue; font-size: 10vh;">k</span>
-            <span style="color: aqua; font-size: 10vh;">b</span>
-            <span style="color: green; font-size: 10vh;">ő</span>
-            <span style="color: blue; font-size: 10vh;">l</span>
-            <span style="font-size: 10vh;">&nbsp</span>
-            <span style="color: aqua; font-size: 10vh;">A</span>
-            <span style="color: red; font-size: 10vh;">k</span>
-            <span style="color: orange; font-size: 10vh;">á</span>
-            <span style="color: green; font-size: 10vh;">r</span>
-            <span style="color: orange; font-size: 10vh;">m</span>
-            <span style="color: aqua; font-size: 10vh;">i</span>
-        </p>
-        <p><input type="button" value="Start" id="startButton" style="width: 300px; height: 100px; font-size: 40px;"></p>
-    </div>
-
-    <div id = 'diffDiv'>
-        <p style="font-size: 60px;">Select difficulty</p>
-        <p id="selectedDiff" style="font-size: 50px; height: 70px;"> </p>
-        <p><button id ='easyGomb'><img src="easy.PNG" alt="Easy" style="height: 100%; width: 100%;"></button> <button id ='mediumGomb'><img src="medium.PNG" alt="Medium" style="height: 100%; width: 100%;"></button> <button id ='hardGomb'><img src="hard.PNG" alt="Hard" style="height: 100%; width: 100%;"></button></p>
-        <p><input type="button" value="Select" id="selectButton" style="font-size: 40px; height: 100px; width: 300px; margin-top: 60px; display: none; border-width: 2px;"></p>
-    </div> 
-
-    <div id="jatekDiv">
-        <p id="score">Score: 0</p>
-        <p>Találd ki az eredeti szót!</p>
-        <p id="kevertKi"></p>
-        <p><input type="text" placeholder="Írd be az eredeti szót" id="eredetiTipp" style="font-size: 25px;"> <input type="button" value="Tippelj!" id="tippGomb" style="font-size: 25px;"></p>
-        <p id="eredmenyKi"></p>
-        <p><input type="button" value="Következő" id="koviGomb" style="display: none; font-size: 25px;"></p>
-    </div>
-
-    <div id="finishDiv">
-        <p id ="gratulaP">Gratulálunk kitaláltál minden szót!</p>
-        <p id = "rosszDbP"></p>
-        <p><input type="button" value="Újra" id="ujraGomb"></p>
-    </div>
-
-    <div id="ui">
-        <input type="button" value="Theme" id="themeGomb">
-        <p><input type="button" value="skip" id="skipButton" style="display: none"></p>
-    </div>
-
-    <script src="code.js"></script>
-
+    <script src="platformchooser.js"></script>
 </body>
 </html>
